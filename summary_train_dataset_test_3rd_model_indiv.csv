@@ -1,2 +1,0 @@
-run,train_time_sec,best_val_acc,accuracy,uar,f1_macro,top2,top3,acc_ci95_lo,acc_ci95_hi,uar_ci95_lo,uar_ci95_hi,f1_ci95_lo,f1_ci95_hi,train_dataset,test_dataset
-train_TESS__test_TESS,18.115016222000122,1.0,0.9976190476190476,0.9976190476190476,0.9976188822636493,1.0,1.0,0.9904761904761905,1.0,0.9916075528948664,1.0,0.9916144482635398,1.0,TESS,TESS
