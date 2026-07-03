@@ -1,0 +1,78 @@
+{
+  "run_config": {
+    "name": "multimodal_audio_text_SpanishMEACorpus_v5",
+    "train_datasets": [
+      "SpanishMEACorpus"
+    ],
+    "train_languages": null,
+    "train_requires_label": true,
+    "test_datasets": [
+      "SpanishMEACorpus"
+    ],
+    "test_languages": null,
+    "test_requires_label": true,
+    "mode": "pure",
+    "topk": 3,
+    "model_cfg": {
+      "conv_filters": 64,
+      "conv_kernel": 9,
+      "conv_blocks": 2,
+      "dropout": 0.3,
+      "dense_units": 128,
+      "lr": 0.001,
+      "batch_size": 32,
+      "epochs": 50,
+      "attn_units": 64
+    },
+    "feature_cfg": {
+      "sr": 16000,
+      "n_mels": 64,
+      "n_fft": 1024,
+      "hop_length": 256,
+      "win_length": 1024,
+      "fmin": 50,
+      "fmax": 7600,
+      "fixed_seconds": 6.0,
+      "use_deltas": true,
+      "use_mfcc": true,
+      "n_mfcc": 13,
+      "mfcc_use_deltas": true,
+      "use_chroma": true,
+      "use_contrast": true,
+      "use_tonnetz": false,
+      "use_f0_pyin": false
+    },
+    "cache_dir": "/content/drive/MyDrive/TFM/Colab Notebooks/2. Modelado/processed_features_datasets_v4/",
+    "out_dir": "/content/drive/MyDrive/TFM/Colab Notebooks/2. Modelado/3_modelo_ESP/runs_1_2/2_1 otros splits2/"
+  },
+  "model_cfg": {
+    "conv_filters": 64,
+    "conv_kernel": 9,
+    "conv_blocks": 2,
+    "dropout": 0.3,
+    "dense_units": 128,
+    "lr": 0.001,
+    "batch_size": 32,
+    "epochs": 50,
+    "attn_units": 64
+  },
+  "feature_cfg": {
+    "sr": 16000,
+    "n_mels": 64,
+    "n_fft": 1024,
+    "hop_length": 256,
+    "win_length": 1024,
+    "fmin": 50,
+    "fmax": 7600,
+    "fixed_seconds": 6.0,
+    "use_deltas": true,
+    "use_mfcc": true,
+    "n_mfcc": 13,
+    "mfcc_use_deltas": true,
+    "use_chroma": true,
+    "use_contrast": true,
+    "use_tonnetz": false,
+    "use_f0_pyin": false
+  },
+  "train_time_sec": 81.72514748573303
+}
