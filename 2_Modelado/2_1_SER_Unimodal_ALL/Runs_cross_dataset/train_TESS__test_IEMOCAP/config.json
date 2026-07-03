@@ -1,0 +1,60 @@
+{
+  "run_config": {
+    "name": "train_TESS__test_IEMOCAP",
+    "train_datasets": [
+      "TESS"
+    ],
+    "train_languages": null,
+    "train_requires_label": true,
+    "test_datasets": [
+      "IEMOCAP"
+    ],
+    "test_languages": null,
+    "test_requires_label": true,
+    "mode": "pure",
+    "topk": 3,
+    "model_cfg": {
+      "conv_filters": 64,
+      "conv_kernel": 5,
+      "conv_blocks": 2,
+      "dropout": 0.3,
+      "dense_units": 128,
+      "lr": 0.001,
+      "batch_size": 32,
+      "epochs": 40
+    },
+    "feature_cfg": {
+      "sr": 16000,
+      "n_mels": 64,
+      "n_fft": 1024,
+      "hop_length": 256,
+      "win_length": 1024,
+      "fmin": 50,
+      "fmax": 7600,
+      "fixed_seconds": 6.0
+    },
+    "cache_dir": "/content/drive/MyDrive/TFM/Colab Notebooks/2. Modelado/1_modelo_inicial/1_modelo_propio_todos/v7/cache_features_filtered_v3",
+    "out_dir": "/content/drive/MyDrive/TFM/Colab Notebooks/2. Modelado/1_modelo_inicial/1_modelo_propio_todos/v7/runs_cross_dataset"
+  },
+  "model_cfg": {
+    "conv_filters": 64,
+    "conv_kernel": 5,
+    "conv_blocks": 2,
+    "dropout": 0.3,
+    "dense_units": 128,
+    "lr": 0.001,
+    "batch_size": 32,
+    "epochs": 40
+  },
+  "feature_cfg": {
+    "sr": 16000,
+    "n_mels": 64,
+    "n_fft": 1024,
+    "hop_length": 256,
+    "win_length": 1024,
+    "fmin": 50,
+    "fmax": 7600,
+    "fixed_seconds": 6.0
+  },
+  "train_time_sec": 39.037901639938354
+}
